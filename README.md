@@ -1,29 +1,37 @@
 # FilterBlade 中文补全
 
-给 [filterblade.xyz](https://www.filterblade.xyz/?game=Poe1) 用的用户脚本，把网站界面完整汉化。
+给 [filterblade.xyz](https://www.filterblade.xyz/?game=Poe1) 用的汉化工具，把网站界面完整中文化。
 
-无需安装任何前置汉化插件，词典内置在脚本里，装完即可使用。
+内置词典，装完即可使用，不需要任何前置汉化插件。提供 Chrome 插件和用户脚本两种形式，任选其一。
 
 ## 安装
 
-1. 浏览器安装 [Tampermonkey](https://www.tampermonkey.net/)（篡改猴）
-2. 安装本脚本：点开 `filterblade-zh.user.js`，Tampermonkey 会自动弹出安装页
-3. 打开 filterblade，左下角出现「中文补全」小面板即为成功
+### 方式一：Chrome 插件（推荐）
 
-Chrome 138 及以上版本，装完脚本后还需要在 `chrome://extensions` → 篡改猴 → **详细信息** → 页面底部打开 **允许用户脚本**，否则任何用户脚本都不会生效。
+1. 下载 [filterblade-zh-extension.zip](https://cdn.jsdelivr.net/gh/ExileKwin/filterblade-zh@main/filterblade-zh-extension.zip) 并解压到一个固定目录（解压后不要删除）
+2. 浏览器地址栏打开 `chrome://extensions`
+3. 右上角打开 **开发者模式**
+4. 点 **加载已解压的扩展程序**，选中刚才解压出来的文件夹
+5. 打开 filterblade，左下角出现「中文补全」面板即成功
+
+Edge 同理，地址是 `edge://extensions`。
+
+### 方式二：用户脚本（Tampermonkey）
+
+1. 浏览器安装 [Tampermonkey](https://www.tampermonkey.net/)（篡改猴）
+2. 点 Tampermonkey 图标 → **实用工具** → **导入** → 选 `filterblade-zh.js`
+3. 在 `chrome://extensions` → 篡改猴 → **详细信息** → 页面底部打开 **允许用户脚本**
+4. 刷新 filterblade
+
+> Chrome 138 起必须打开上面那个开关，否则任何用户脚本都不会生效。
 
 ## 使用
 
-安装后无需任何操作，页面自动中文化。左下角面板提供三个功能：
+安装后无需配置，页面自动中文化。左下角面板有三个功能：
 
 - **采集**：把页面上尚未翻译的英文导出成 CSV
 - **导入**：载入词典文件（JSON 或 CSV）
 - **重新应用**：页面文案被网站重新渲染时可手动再翻一次
-
-鼠标移到 Tampermonkey 图标上，还可以使用：
-
-- **重置为内置词典**：清掉以前导入的旧词典，恢复脚本自带版本
-- **清空累积采集记录**
 
 ## 词典与译名来源
 
@@ -39,7 +47,7 @@ Chrome 138 及以上版本，装完脚本后还需要在 `chrome://extensions` �
 
 **完成度：** 以站内实际采集结果为基准，界面可见文本已全部汉化。最近一次整站采集共 1103 条未翻译文本，已全部补齐，采集复扫无残留。
 
-页面上的英文只剩两类「本就应该保留」的内容：筛选器代码字面量，以及掉落模拟器随机生成的物品组合（其名称取自过滤器数据本身）。
+页面上的英文只剩两类「本就应该保留」的内容：筛选器代码字面量，以及掉落模拟器随机生成的物品组合。
 
 ## 作者
 
@@ -49,7 +57,7 @@ Kwin
 
 版本号跟随游戏赛季，例如 `3.30` 对应 3.30 赛季。新赛季有新物品时，词典会同步补充并升级版本号。
 
-脚本已内置更新地址，Tampermonkey 会自动检测新版本并提示升级，无需重新安装。
+用户脚本版本内置了更新地址，Tampermonkey 会自动检测新版本；插件版本需重新下载压缩包并按上面步骤覆盖加载。
 
 ## 许可
 
