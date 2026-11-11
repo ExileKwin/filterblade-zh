@@ -6,7 +6,17 @@
 
 ## 安装
 
-### 方式一：Chrome 插件（推荐）
+
+### 方式二：用户脚本（Tampermonkey）（推荐）
+
+1. 浏览器安装 [Tampermonkey](https://www.tampermonkey.net/)（篡改猴）
+2. 点 Tampermonkey 图标 → **实用工具** → **导入** → 选 `filterblade-zh.js`
+3. 在 `chrome://extensions` → 篡改猴 → **详细信息** → 页面底部打开 **允许用户脚本**
+4. 刷新 filterblade
+
+> Chrome 138 起必须打开上面那个开关，否则任何用户脚本都不会生效。
+
+### 方式一：Chrome 插件
 
 1. 下载 [filterblade-zh-extension.zip](https://cdn.jsdelivr.net/gh/ExileKwin/filterblade-zh@main/filterblade-zh-extension.zip) 并解压到一个固定目录（解压后不要删除）
 2. 浏览器地址栏打开 `chrome://extensions`
@@ -15,15 +25,6 @@
 5. 打开 filterblade，左下角出现「中文补全」面板即成功
 
 Edge 同理，地址是 `edge://extensions`。
-
-### 方式二：用户脚本（Tampermonkey）
-
-1. 浏览器安装 [Tampermonkey](https://www.tampermonkey.net/)（篡改猴）
-2. 点 Tampermonkey 图标 → **实用工具** → **导入** → 选 `filterblade-zh.js`
-3. 在 `chrome://extensions` → 篡改猴 → **详细信息** → 页面底部打开 **允许用户脚本**
-4. 刷新 filterblade
-
-> Chrome 138 起必须打开上面那个开关，否则任何用户脚本都不会生效。
 
 ## 使用
 
